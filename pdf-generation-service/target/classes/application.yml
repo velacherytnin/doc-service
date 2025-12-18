@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+# Application settings
+app:
+  caching:
+    enabled: true  # Set to false to disable all caching (useful for development/testing)
+
+# Config Server base (used by MappingService)
+config-server:
+  url: http://localhost:8888
+
+spring:
+  application:
+    name: pdf-generation-service
+  # Config server is optional - falls back to local application.yml if not available
+  config:
+    import: optional:configserver:${config-server.url}
+  cloud:
+    config:
+      enabled: ${CONFIG_SERVER_ENABLED:false}  # Disabled by default for local dev
+      fail-fast: false  # Don't fail if config server is unavailable
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,configprops
+  endpoint:
+    configprops:
+      enabled: true
