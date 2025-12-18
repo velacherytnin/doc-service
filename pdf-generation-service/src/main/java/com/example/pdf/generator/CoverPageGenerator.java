@@ -1,6 +1,6 @@
 package com.example.pdf.generator;
 
-import com.example.pdf.generator.PdfBoxGenerator;
+import com.example.pdf.service.PdfBoxGenerator;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;

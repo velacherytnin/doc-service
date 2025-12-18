@@ -1,7 +1,7 @@
 package com.example.pdf.controller;
 
 import com.example.pdf.preprocessor.EnrollmentApplicationPreProcessor;
-import com.example.service.FlexiblePdfMergeService;
+import com.example.pdf.service.FlexiblePdfMergeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;

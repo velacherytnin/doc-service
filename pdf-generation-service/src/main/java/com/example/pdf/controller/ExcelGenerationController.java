@@ -1,10 +1,10 @@
 package com.example.pdf.controller;
 
 import com.example.pdf.preprocessor.ConfigurablePayloadPreProcessor;
-import com.example.service.ExcelTemplateService;
-import com.example.service.ExcelMergeConfigService;
-import com.example.service.ExcelMergeConfig;
-import com.example.service.ExcelToPdfConverter;
+import com.example.pdf.service.ExcelTemplateService;
+import com.example.pdf.service.ExcelMergeConfigService;
+import com.example.pdf.service.ExcelMergeConfig;
+import com.example.pdf.service.ExcelToPdfConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -257,9 +257,9 @@ public class ExcelGenerationController {
         List<ExcelTemplateService.TableMapping> result = new java.util.ArrayList<>();
         
         for (Object obj : configMappings) {
-            if (obj instanceof com.example.service.TableMappingConfig) {
-                com.example.service.TableMappingConfig config = 
-                    (com.example.service.TableMappingConfig) obj;
+            if (obj instanceof com.example.pdf.service.TableMappingConfig) {
+                com.example.pdf.service.TableMappingConfig config = 
+                    (com.example.pdf.service.TableMappingConfig) obj;
                 ExcelTemplateService.TableMapping mapping = new ExcelTemplateService.TableMapping(
                     config.getSheetName(),
                     config.getStartRow(),

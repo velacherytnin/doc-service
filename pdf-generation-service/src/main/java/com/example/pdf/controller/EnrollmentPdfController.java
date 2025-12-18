@@ -1,8 +1,8 @@
 package com.example.pdf.controller;
 
-import com.example.service.ConfigSelectionService;
-import com.example.service.FlexiblePdfMergeService;
-import com.example.service.EnrollmentSubmission;
+import com.example.pdf.service.ConfigSelectionService;
+import com.example.pdf.service.FlexiblePdfMergeService;
+import com.example.pdf.service.EnrollmentSubmission;
 import com.example.pdf.preprocessor.ConfigurablePayloadPreProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,7 +1,7 @@
-package com.example.service;
+package com.example.pdf.service;
 
-import com.example.pdfgeneration.function.FunctionExpressionResolver;
-import com.example.pdfgeneration.function.FunctionRegistry;
+import com.example.pdf.function.FunctionExpressionResolver;
+import com.example.pdf.function.FunctionRegistry;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;

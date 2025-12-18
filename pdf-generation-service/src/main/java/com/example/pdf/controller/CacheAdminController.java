@@ -1,7 +1,7 @@
 package com.example.pdf.controller;
 
-import com.example.service.AcroFormFillService;
-import com.example.service.PdfMergeConfigService;
+import com.example.pdf.service.AcroFormFillService;
+import com.example.pdf.service.PdfMergeConfigService;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.caffeine.CaffeineCache;
 import org.springframework.web.bind.annotation.*;
