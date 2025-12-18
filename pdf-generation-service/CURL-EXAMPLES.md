@@ -42,6 +42,7 @@ curl -X POST "$BASE_URL/api/enrollment/generate" \
       "state": "CA"
     },
     "payload": {
+      "companyName":"ABC",
       "memberName": "John Doe",
       "memberId": "12345",
       "planName": "Gold PPO"
